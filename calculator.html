@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>
+Calculater
+</title>
+<style>
+body{
+background:radial-gradient(red,green,blue,yellow,brown,cyan,orange)
+}
+div{
+margin:auto;
+width:300px;
+height:470px;
+background-color:black;
+border-radius:40px;
+}
+h1{
+text-align:center;
+font-size:50px;
+animation-name:asya;
+animation-duration:1s;
+animation-iteration-count:infinite;
+animation-timing-function:linear;
+}
+@keyframes asya{
+0%{color:red;}
+25%{color:green;}
+50%{color:blue;}
+75%{color:yellow;}
+100%{color:black;}
+}
+#first{
+width:260px;
+height:70px;
+margin-top:20px;
+margin-left:20px;
+border-radius:10px;
+padding:10px;
+font-size:30px;
+color:red;
+outline:none;
+margin-bottom:50px;
+}
+#big{
+margin-left:10px;
+height:30px;
+width:210px;
+font-family:verdana;
+font-weight:bold;
+border-radius:5px;
+outline:none;
+}
+#key{
+width:60px;
+height:30px;
+margin-left:10px;
+font-family:verdana;
+font-weight:bold;
+border-radius:5px;
+outline:none;
+}
+#vbig{
+width:280px;
+height:30px;
+margin-left:10px;
+font-family:verdana;
+font-weight:bold;
+border-radius:5px;
+outline:none;
+}
+#key:hover{
+background:skyblue;
+}
+#big:hover{
+background:skyblue;
+}
+#vbig:hover{
+background:skyblue;
+}
+</style>
+</head>
+<body>
+<h1>CALCULATOR</h1>
+<div>
+<form name="cal">
+<input id="first" placeholder="write expression" name="display"><br><br>
+<input type="button" id="big" value="CLEAR" onclick="cal.display.value=''">
+<input type="button" id="key" value="%" onclick="cal.display.value+='%'"><br><br>
+<input type="button" id="key" value="7" onclick="cal.display.value+='7'">
+<input type="button" id="key" value="8" onclick="cal.display.value+='8'">
+<input type="button" id="key" value="9" onclick="cal.display.value+='9'">
+<input type="button" id="key" value="+" onclick="cal.display.value+='+'"><br><br>
+<input type="button" id="key" value="4" onclick="cal.display.value+='4'">
+<input type="button" id="key" value="5" onclick="cal.display.value+='5'">
+<input type="button" id="key" value="6" onclick="cal.display.value+='6'">
+<input type="button" id="key" value="-" onclick="cal.display.value+='-'"><br><br>
+<input type="button" id="key" value="1" onclick="cal.display.value+='1'">
+<input type="button" id="key" value="2" onclick="cal.display.value+='2'">
+<input type="button" id="key" value="3" onclick="cal.display.value+='3'">
+<input type="button" id="key" value="" onclick="cal.display.value+=''"><br><br>
+<input type="button" id="key" value="." onclick="cal.display.value+='.'">
+<input type="button" id="key" value="0" onclick="cal.display.value+='0'">
+<input type="button" id="key" value="00" onclick="cal.display.value+='00'">
+<input type="button" id="key" value="/" onclick="cal.display.value+='/'"><br><br>
+<input type="button" id="vbig" value="=" onclick="cal.display.value=eval(cal.display.value)">
+</div>
+</body>
+</html>
